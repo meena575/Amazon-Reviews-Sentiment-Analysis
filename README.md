@@ -1,7 +1,7 @@
 # Amazon Review Sentiment Analysis Project
 ## Objective
 This project aims to extract Amazon product reviews, perform sentiment analysis, and visualize the results using various tools like Streamlit, Google Sheets API, and natural language processing techniques. The sentiment analysis helps understand customer feedback by categorizing reviews as positive, negative, or neutral.
-
+<img src="https://www.revuze.it/blog/wp-content/uploads/sites/2/2020/03/Amazon-Review-Analysis.png">
 ## Table of Contents
 1. [Objective](#Objective)
 2. [Project Structure](#Project-Structure)
