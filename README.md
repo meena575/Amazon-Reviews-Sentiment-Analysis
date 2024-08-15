@@ -17,7 +17,7 @@ This project aims to extract Amazon product reviews, perform sentiment analysis,
 12. [Demo](#Demo)
 
 ## Project Structure
-    '''
+'''bash
   
     ├── app.py               # Main Streamlit application for sentiment analysis
     ├── webscraping.py       # Script for scraping reviews from HTML files
@@ -49,19 +49,19 @@ To run this project, you'll need to install the following Python libraries:
 ## Installation
   1. **Clone the repository:**
 
-    ```bash
+   ```bash
       git clone https://github.com/your-username/amazon-review-sentiment-analysis.git
       cd amazon-review-sentiment-analysis
-    ```
+   ```
   2. **Set up a virtual environment:**
 
-    ```bash
+        ```bash
       python -m venv venv
       source venv/bin/activate  # For Windows: venv\Scripts\activate
      ```
   3. **Install dependencies:**
 
-    ```bash
+        ```bash
       
       pip install -r requirements.txt
       ```
@@ -70,10 +70,10 @@ To run this project, you'll need to install the following Python libraries:
 
   5. **Run the Streamlit app:**
 
-    ```bash
+        ```bash
     
-    streamlit run app.py
-    ```
+        streamlit run app.py
+        ```
 ## How It Works
 ### Sentiment Analysis
    - The app.py script connects to Google Sheets to fetch Amazon review data, analyzes each review's sentiment using the VADER Sentiment Analyzer, and displays the results in a user-friendly interface.
@@ -93,9 +93,9 @@ To run this project, you'll need to install the following Python libraries:
 ## Usage
   1. Run the webscraping.py script to scrape data from local HTML files and upload it to Google Sheets.
 
-    ```bash
-    python webscraping.py
-    ```
+        ```bash
+        python webscraping.py
+        ```
  2. Run the Streamlit app to analyze and visualize the sentiment of reviews.
     ```bash
     streamlit run app.py
@@ -108,8 +108,8 @@ To run this project, you'll need to install the following Python libraries:
   3. Download your OAuth 2.0 client credentials as a key.json file.
   4. Place the key.json file in your project directory.
   5. In the app.py and webscraping.py scripts, the following line will authenticate and authorize access to Google Sheets:
-    ```python
-    flow = InstalledAppFlow.from_client_secrets_file("key.json", SCOPES)
-    ```
+        ```python
+        flow = InstalledAppFlow.from_client_secrets_file("key.json", SCOPES)
+        ```
 ## Demo
 A demo of the project is available [here.]()
